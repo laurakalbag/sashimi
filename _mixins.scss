@@ -1,0 +1,124 @@
+// This file contains mixins that aren't included in Compass, these are mixins I've written myself :)
+
+/* 	all the mixins below gives us a way of specifying measurements in a single unit, and then it puts it into both pixels and rems
+	so we've got relative units for accessibility, but absolute units for old browsers */
+
+@mixin font_size($size) {
+	font-size: #{$size}px;
+	font-size: #{$size/16}rem;
+}
+
+@mixin line_height($size) {
+	line-height: #{$size}px;
+	line-height: #{$size/16}rem;
+}
+
+@mixin height($size) {
+	height: #{$size}px;
+	height: #{$size/16}rem;
+}
+
+@mixin width($size) {
+	width: #{$size}px;
+	width: #{$size/16}rem;
+}
+
+@mixin min_height($size) {
+	min-height: #{$size}px;
+	min-height: #{$size/16}rem;
+}
+
+@mixin max_width($size) {
+	max-width: #{$size}px;
+	max-width: #{$size/16}rem;
+}
+
+@mixin top($size) {
+	top: #{$size}px;
+	top: #{$size/16}rem;
+}
+
+@mixin text_indent($size) {
+	text-indent: #{$size}px;
+	text-indent: #{$size/16}rem;
+}
+
+@mixin border_width($size) {
+	border-width: #{$size}px;
+	border-width: #{$size/16}rem;
+}
+
+@mixin margin ($top, $right, $bottom, $left) {
+	margin: #{$top}px #{$right}px #{$bottom}px #{$left}px;
+	margin: #{$top/16}rem #{$right/16}rem #{$bottom/16}rem #{$left/16}rem;
+}
+
+	@mixin margin_top ($size) {
+		margin-top: #{$size}px;
+		margin-top: #{$size/16}rem;
+	}
+	
+	@mixin margin_right ($size) {
+		margin-right: #{$size}px;
+		margin-right: #{$size/16}rem;
+	}
+	
+	@mixin margin_bottom ($size) {
+		margin-bottom: #{$size}px;
+		margin-bottom: #{$size/16}rem;
+	}
+	
+	@mixin margin_left ($size) {
+		margin-left: #{$size}px;
+		margin-left: #{$size/16}rem;
+	}
+
+@mixin padding ($top, $right, $bottom, $left) {
+	padding: #{$top}px #{$right}px #{$bottom}px #{$left}px;
+	padding: #{$top/16}rem #{$right/16}rem #{$bottom/16}rem #{$left/16}rem;
+}
+
+	@mixin padding_top ($size) {
+		padding-top: #{$size}px;
+		padding-top: #{$size/16}rem;
+	}
+	
+	@mixin padding_right ($size) {
+		padding-right: #{$size}px;
+		padding-right: #{$size/16}rem;
+	}
+	
+	@mixin padding_bottom ($size) {
+		padding-bottom: #{$size}px;
+		padding-bottom: #{$size/16}rem;
+	}
+	
+	@mixin padding_left ($size) {
+		padding-left: #{$size}px;
+		padding-left: #{$size/16}rem;
+	}
+
+	@mixin background_size ($vert,$horz) {
+		background-size: #{$vert/16}rem #{$horz/16}rem;
+	}
+
+/* end px/rem mixins */
+
+/* This mixin provides the properties required to make :after and :before elements work as image background containers */
+
+@mixin beforeafter_container { /* this is applied to the element itself */
+	position: relative;
+	z-index: 1;
+}
+
+@mixin beforeafter { /* this is applied to the pseudo selector of the element (:after or :before) */
+	background: 0 0 no-repeat;
+
+	display: block;
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
