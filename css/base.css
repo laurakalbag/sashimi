@@ -132,18 +132,6 @@ body {
   overflow-x: hidden;
   width: 100%; }
 
-/* line 10, ../sass/layout.scss */
-.main {
-  padding: 20px 15px 30px 15px;
-  padding: 1.25rem 0.9375rem 1.875rem 0.9375rem; }
-  @media only screen and (min-width: 720px) {
-    /* line 10, ../sass/layout.scss */
-    .main {
-      overflow: visible;
-      margin: 0 auto;
-      width: 700px;
-      width: 43.75rem; } }
-
 /* 
 
 Please avoid making any changes directly to base.css as these will be overwritten by the Sass.
