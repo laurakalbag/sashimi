@@ -1,5 +1,9 @@
 # README
 
+This is my Sass setup for new projects. It uses Sass and Compass to keep the CSS organised, less repetitive and easy to read. To use the CSS compiled into the /css folder, add the following to the `<head></head>` of your HTML page.
+
+`<link rel="stylesheet" href="css/base.css">`
+
 ## Including Sass on the server
 
 The /sass and /config folders (and their files) are not required on the server because the Sass is compiled locally.
