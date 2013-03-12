@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* line 17, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* If we have web fonts, they're in this file */
+/* 	all the mixins below gives us a way of specifying measurements in a single unit, and then it puts it into both pixels and rems
+	so we've got relative units for accessibility, but absolute units for old browsers */
+/* end px/rem mixins */
+/* This mixin provides the properties required to make :after and :before elements work as image background containers */
+/* line 3, ../sass/reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, svg, hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-weight: normal; }
+
+/* line 3, ../sass/reset.scss */
+body {
+  background: #fff;
+  line-height: 1; }
+
+/* line 3, ../sass/reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 3, ../sass/reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to highlight inserts somehow! */
+/* line 3, ../sass/reset.scss */
+ins {
+  text-decoration: none;
+  background: #fff75c; }
+
+/* line 3, ../sass/reset.scss */
+del {
+  text-decoration: line-through; }
+
+/* line 3, ../sass/reset.scss */
+em {
+  font-style: italic; }
+
+/* line 3, ../sass/reset.scss */
+strong {
+  font-weight: bold; }
+
+/* line 3, ../sass/reset.scss */
+abr {
+  border-bottom: 1px dotted; }
+
+/* line 3, ../sass/reset.scss */
+input[type=submit], button {
+  cursor: pointer;
+  -webkit-appearance: none; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 3, ../sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, svg, main {
+  display: block; }
+
+/* make sure the page doesn't shift horizontally */
+/* line 3, ../sass/reset.scss */
+html {
+  overflow-y: scroll; }
+
+/* line 3, ../sass/reset.scss */
+blockquote {
+  border-left: 2px solid; }
+
+/* line 3, ../sass/layout.scss */
+body {
+  min-width: 260px;
+  /* stops the pages getting ridiculously narrow */
+  overflow-x: hidden;
+  width: 100%; }
+
+/* line 10, ../sass/layout.scss */
+.main {
+  padding: 20px 15px 30px 15px;
+  padding: 1.25rem 0.9375rem 1.875rem 0.9375rem; }
+  @media only screen and (min-width: 720px) {
+    /* line 10, ../sass/layout.scss */
+    .main {
+      overflow: visible;
+      margin: 0 auto;
+      width: 700px;
+      width: 43.75rem; } }
+
+/* 
+
+Please avoid making any changes directly to base.css as these will be overwritten by the Sass.
+
+Please put any additional CSS into this file which is executed after every other Sass file (so should override the cascade where relevant). 
+
+Putting styles in this file also mean they can be refactored into the Sass at a later date. 
+
+*/
