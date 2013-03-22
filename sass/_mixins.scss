@@ -48,6 +48,11 @@
 	border-width: #{$size/16}rem;
 }
 
+@mixin border_radius($size) {
+	border-radius: #{$size}px;
+	border-radius: #{$size/16}rem;
+}
+
 @mixin margin ($top, $right, $bottom, $left) {
 	margin: #{$top}px #{$right}px #{$bottom}px #{$left}px;
 	margin: #{$top/16}rem #{$right/16}rem #{$bottom/16}rem #{$left/16}rem;
