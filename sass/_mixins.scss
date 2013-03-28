@@ -38,6 +38,11 @@
 	top: #{$size/16}rem;
 }
 
+@mixin left($size) {
+	left: #{$size}px;
+	left: #{$size/16}rem;
+}
+
 @mixin text_indent($size) {
 	text-indent: #{$size}px;
 	text-indent: #{$size/16}rem;
