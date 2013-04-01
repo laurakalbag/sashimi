@@ -112,6 +112,19 @@
 		background-size: #{$vert/16}rem #{$horz/16}rem;
 	}
 
+	/* Jonic's mixin */
+	@mixin rem-mq($condition, $size) {
+		//	px fallback - I guess this would work?
+		//	Duplicates your CSS output, but keeps just one place where you write it.
+		@media only screen and (#{$condition}: $size + px) {
+			@content;
+		}
+
+		@media only screen and (#{$condition}: $size + rem) {
+			@content;
+		}
+	}
+
 /* end px/rem mixins */
 
 /* This mixin provides the properties required to make :after and :before elements work as image background containers */
