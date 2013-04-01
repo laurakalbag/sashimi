@@ -120,7 +120,7 @@
 			@content;
 		}
 
-		@media only screen and (#{$condition}: $size + rem) {
+		@media only screen and (#{$condition}: $size/16 + rem) {
 			@content;
 		}
 	}
