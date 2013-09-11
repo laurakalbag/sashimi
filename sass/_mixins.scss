@@ -1,7 +1,8 @@
-// This file contains mixins that aren't included in Compass, these are mixins I've written myself :)
+// These are mixins I've written myself :)
 
 /* 	all the mixins below gives us a way of specifying measurements in a single unit, and then it puts it into both pixels and rems
 	so we've got relative units for accessibility, but absolute units for old browsers */
+
 
 @mixin font_size($size) {
 	font-size: #{$size}px;
@@ -28,6 +29,11 @@
 	min-height: #{$size/16}rem;
 }
 
+@mixin min_width($size) {
+	min-width: #{$size}px;
+	min-width: #{$size/16}rem;
+}
+
 @mixin max_width($size) {
 	max-width: #{$size}px;
 	max-width: #{$size/16}rem;
@@ -36,6 +42,16 @@
 @mixin top($size) {
 	top: #{$size}px;
 	top: #{$size/16}rem;
+}
+
+@mixin right($size) {
+	right: #{$size}px;
+	right: #{$size/16}rem;
+}
+
+@mixin bottom($size) {
+	bottom: #{$size}px;
+	bottom: #{$size/16}rem;
 }
 
 @mixin left($size) {
@@ -56,6 +72,11 @@
 @mixin border_radius($size) {
 	border-radius: #{$size}px;
 	border-radius: #{$size/16}rem;
+}
+
+@mixin border_radii ($tl, $tr, $br, $bl) {
+	border-radius: #{$tl}px #{$tr}px #{$br}px #{$bl}px;
+	border-radius: #{$tl/16}rem #{$tr/16}rem #{$br/16}rem #{$bl/16}rem;
 }
 
 @mixin margin ($top, $right, $bottom, $left) {

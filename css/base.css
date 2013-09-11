@@ -2,6 +2,7 @@
 /* If we have web fonts, they're in this file */
 /* 	all the mixins below gives us a way of specifying measurements in a single unit, and then it puts it into both pixels and rems
 	so we've got relative units for accessibility, but absolute units for old browsers */
+/* Jonic's mixin */
 /* end px/rem mixins */
 /* This mixin provides the properties required to make :after and :before elements work as image background containers */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, svg, hr {
